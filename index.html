@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="stilos.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>myClick</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-primary">
+        <div class="container">
+          <a class="navbar-brand text-white" href="https://tradesupport.freshdesk.com/a/tickets/new" target="_blank">
+            myClick
+            <img src="clk.gif" class="text-white rounded-circle bg-light p-1" alt="" width="30" height="24" ">
+          </a>
+          <!-- <p class="text-warning">vBeta</p> -->
+          <button href="" class="btn btn-outline-light btn-sm button1" id="butt">imagen</button>
+
+        </div>
+      </nav>
+
+      <div class="container mt-3">
+        <div class="row align-items-center" >
+            <div class="col" >
+                <div class="input-group mb-2" id="btn1">
+                    <span class="input-group-text bg-light">🧾</span>
+                    <input type="text" class="form-control" placeholder="My text" value="" id="po1">
+                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Copy</button>
+                  </div>
+            </div>
+            <div class="col">
+              <div class="input-group mb-2" id="btn2">
+                  <span class="input-group-text bg-light">📃</span>
+                  <input type="text" class="form-control" placeholder="My text" value="" id="po2">
+                  <button class="btn btn-outline-primary" type="button" id="button-addon2">Copy</button>
+                </div>
+          </div>
+          <div class="col">
+            <div class="input-group mb-2" id="btn3">
+                <span class="input-group-text bg-light">📜</span>
+                <input type="text" class="form-control" placeholder="My text" value="" id="po3">
+                <button class="btn btn-outline-primary" type="button" id="button-addon2">Copy</button>
+              </div>
+        </div>
+          </div>
+      </div>
+      <div class="container">
+        <div class="input-group mb-3" id="btn4">
+            <span class="input-group-text bg-light">📗</span>
+            <input type="text" class="form-control" placeholder="Here your text!" aria-label="My long Text" value="" id="po4">
+            <button class="btn btn-outline-primary" type="button" id="button-addon2">Copy</button>
+          </div>
+      </div>
+      <div class="container">
+        <div class="input-group mb-3" id="btn5">
+            <span class="input-group-text bg-light">📕</span>
+            <input type="text" class="form-control" placeholder="Here your text!" aria-label="My long Text" value="" id="po5">
+            <button class="btn btn-outline-primary" type="button" id="button-addon2">Copy</button>
+          </div>
+      </div>
+
+      <div class="container text-center mt-4">
+        <div class="form-floating text-center" id="btn6">
+          <span class="input-group-text bg-light ">🖋️ Complete Mail</span>
+          <textarea class="form-control" placeholder="Leave a comment here" style="height: 100px" value="" id="po6"></textarea>
+          <button class="btn btn-outline-primary" type="button"">Copy</button>
+        </div>
+      </div>
+      <div class="container text-center mt-3">
+        <div class="form-floating text-center" id="btn7">
+          <span class="input-group-text bg-light ">🖊️ Complete Mail</span>
+          <textarea class="form-control " placeholder="Leave a comment here 2" style="height: 100px" id="po7"></textarea>
+          <button class="btn btn-outline-primary" type="button">Copy</button>
+        </div>
+      </div>
+      <footer><p class="text-center mt-2 text-muted" style="font-size:12px;top:5px;">&copy;Gh Desarrollo vBeta</p></footer>
+      <!-- PopUp -->
+      <div class="popup">
+        <div class="popup-content">      
+            <i class='bx bx-run close'></i>         
+            <div id="bontOne">
+                <h5>Select an img</h5>
+                <input type="file" name='image' multiple id='fileInput'/>
+                <div id='grid'></div>
+            <h6>Resize</h6>
+                <canvas id='imgResize'></canvas>
+                <a id="download" download="resized.png">
+                    <button class="btn btn-outline-dark btn-sm" type="button">Download Image</button>
+                </a>
+            </div>
+        </div>
+      
+      <script src="source.js"></script>
+</body>
+</html>
